@@ -8,7 +8,7 @@ def read_root():
 
 @app.get("/add/{a}/{b}")
 def add_numbers(a: int, b: int):
-    return {"result": a - b}  # bug: should be a + b
+    return {"result": a + b} 
 
 @app.get("/health")
 def health_check():
